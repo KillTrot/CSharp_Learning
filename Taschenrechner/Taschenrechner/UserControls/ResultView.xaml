@@ -1,0 +1,15 @@
+﻿<UserControl x:Name="userControl" x:Class="Taschenrechner.UserControls.ResultView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Taschenrechner.UserControls"
+             mc:Ignorable="d" 
+             d:DesignHeight="50" d:DesignWidth="200">
+    <Grid>
+        <Viewbox>
+            <Label x:Name="label_result" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content="{Binding Result, ElementName=userControl}"></Label>
+        </Viewbox>
+        
+    </Grid>
+</UserControl>
